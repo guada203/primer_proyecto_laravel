@@ -12,3 +12,11 @@ Route::get('/contacto', function () {
 });
 
 Route::post('/contacto', [ContactoController::class, 'procesar']);
+
+Route::get('/home', function (){
+    return view('home');
+});
+
+Route::get('/', function (){
+    return view('home');
+});
